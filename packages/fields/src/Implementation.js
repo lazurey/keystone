@@ -4,7 +4,16 @@ import { parseFieldAccess } from '@keystonejs/access-control';
 class Field {
   constructor(
     path,
-    { hooks = {}, isRequired, defaultValue, access, label, schemaDoc, ...config },
+    {
+      hooks = {},
+      isOrderable = true,
+      isRequired,
+      defaultValue,
+      access,
+      label,
+      schemaDoc,
+      ...config
+    },
     { getListByKey, listKey, listAdapter, fieldAdapterClass, defaultAccess, schemaNames }
   ) {
     this.path = path;
@@ -13,6 +22,7 @@ class Field {
     this.config = config;
     this.isRequired = !!isRequired;
     this.defaultValue = defaultValue;
+    this.isOrderable = isOrderable;
     this.hooks = hooks;
     this.getListByKey = getListByKey;
     this.listKey = listKey;
@@ -29,13 +39,17 @@ class Field {
     // Should be overwritten by types that implement a Relationship interface
     this.isRelationship = false;
 
-    this.access = parseFieldAccess({
+    this.access = this.parseFieldAccess({
       schemaNames,
       listKey,
       fieldKey: path,
       defaultAccess,
-      access: access,
+      access,
     });
+  }
+
+  parseFieldAccess(args) {
+    return parseFieldAccess(args);
   }
 
   // Field types should replace this if they want to any fields to the output type
@@ -160,6 +174,7 @@ class Field {
       path: this.path,
       type: this.constructor.name,
       isRequired: this.isRequired,
+      isOrderable: this.isOrderable,
       // We can only pass scalar default values through to the admin ui, not
       // functions
       defaultValue: typeof this.defaultValue !== 'function' ? this.defaultValue : undefined,
