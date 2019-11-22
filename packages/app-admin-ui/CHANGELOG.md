@@ -1,5 +1,16 @@
 # @keystonejs/app-admin-ui
 
+## 5.3.0
+
+### Minor Changes
+
+- [`733ac847`](https://github.com/keystonejs/keystone/commit/733ac847cab488dc92a30e7b458191d750fd5a3d) [#1983](https://github.com/keystonejs/keystone/pull/1983) Thanks [@MadeByMike](https://github.com/MadeByMike)! - Fixes a bug with schema generation and display in the AdminUI when a list contains only fields where access control is false.
+
+### Patch Changes
+
+- Updated dependencies [[`267dab2f`](https://github.com/keystonejs/keystone/commit/267dab2fee5bbea711c417c13366862e8e0ab3be), [`8188d76c`](https://github.com/keystonejs/keystone/commit/8188d76cb3f5d3e112ef95fd4e1887db9a520d9d), [`af1e9e4d`](https://github.com/keystonejs/keystone/commit/af1e9e4d3b74753b903b20641b51df99184793df)]:
+  - @keystonejs/fields@6.0.0
+
 ## 5.2.0
 
 ### Minor Changes

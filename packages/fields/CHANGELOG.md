@@ -1,5 +1,24 @@
 # @keystonejs/fields
 
+## 6.0.0
+
+### Major Changes
+
+- [`8188d76c`](https://github.com/keystonejs/keystone/commit/8188d76cb3f5d3e112ef95fd4e1887db9a520d9d) [#1980](https://github.com/keystonejs/keystone/pull/1980) Thanks [@timleslie](https://github.com/timleslie)! - Removed `KnexRelationshipInterface.createForeignKey()`.
+
+### Minor Changes
+
+- [`267dab2f`](https://github.com/keystonejs/keystone/commit/267dab2fee5bbea711c417c13366862e8e0ab3be) [#1799](https://github.com/keystonejs/keystone/pull/1799) Thanks [@SeanDoyleGit](https://github.com/SeanDoyleGit)! - Resolved unsplash images duplication issue in react-slate
+
+* [`af1e9e4d`](https://github.com/keystonejs/keystone/commit/af1e9e4d3b74753b903b20641b51df99184793df) [#1963](https://github.com/keystonejs/keystone/pull/1963) Thanks [@gemscng](https://github.com/gemscng)! - Insensitive by default for text field filter
+
+### Patch Changes
+
+- Updated dependencies [[`8188d76c`](https://github.com/keystonejs/keystone/commit/8188d76cb3f5d3e112ef95fd4e1887db9a520d9d), [`44b2bc93`](https://github.com/keystonejs/keystone/commit/44b2bc938fd508ac75f6a9cbb364006b9f122711), [`860dabec`](https://github.com/keystonejs/keystone/commit/860dabecacdf81aa1563cea9a5d50add8623dac1), [`a3fdc50e`](https://github.com/keystonejs/keystone/commit/a3fdc50ebb61b38814816804b04d7cb4bc0fc70a), [`da62aa4a`](https://github.com/keystonejs/keystone/commit/da62aa4a0af9cf27fd59fdcfb6b960e24999254d)]:
+  - @keystonejs/adapter-knex@6.0.0
+  - @keystonejs/field-content@5.0.2
+  - @keystonejs/test-utils@5.0.2
+
 ## 5.2.0
 
 ### Minor Changes

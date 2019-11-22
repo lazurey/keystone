@@ -1,5 +1,24 @@
 # @keystonejs/adapter-knex
 
+## 6.0.0
+
+### Major Changes
+
+- [`44b2bc93`](https://github.com/keystonejs/keystone/commit/44b2bc938fd508ac75f6a9cbb364006b9f122711) [#1975](https://github.com/keystonejs/keystone/pull/1975) Thanks [@timleslie](https://github.com/timleslie)! - Removed `KnexListAdapter.createForeignKeys()` method.
+
+* [`a3fdc50e`](https://github.com/keystonejs/keystone/commit/a3fdc50ebb61b38814816804b04d7cb4bc0fc70a) [#1972](https://github.com/keystonejs/keystone/pull/1972) Thanks [@timleslie](https://github.com/timleslie)! - `KnexListAdapter.realKeys` are now computed in the `postConnect()` phase, rather than at object instantiation.
+
+- [`da62aa4a`](https://github.com/keystonejs/keystone/commit/da62aa4a0af9cf27fd59fdcfb6b960e24999254d) [#1971](https://github.com/keystonejs/keystone/pull/1971) Thanks [@timleslie](https://github.com/timleslie)! - Removed the `KnexListAdapter.createAdjacencyTable()` method.
+
+### Patch Changes
+
+- [`8188d76c`](https://github.com/keystonejs/keystone/commit/8188d76cb3f5d3e112ef95fd4e1887db9a520d9d) [#1980](https://github.com/keystonejs/keystone/pull/1980) Thanks [@timleslie](https://github.com/timleslie)! - Removed `KnexRelationshipInterface.createForeignKey()`.
+
+* [`860dabec`](https://github.com/keystonejs/keystone/commit/860dabecacdf81aa1563cea9a5d50add8623dac1) [#1973](https://github.com/keystonejs/keystone/pull/1973) Thanks [@timleslie](https://github.com/timleslie)! - Fixed a bug which generated bad queries for deeply nested queries.
+* Updated dependencies [[`733ac847`](https://github.com/keystonejs/keystone/commit/733ac847cab488dc92a30e7b458191d750fd5a3d)]:
+  - @keystonejs/keystone@5.3.0
+  - @keystonejs/fields-auto-increment@5.0.1
+
 ## 5.1.0
 
 ### Minor Changes

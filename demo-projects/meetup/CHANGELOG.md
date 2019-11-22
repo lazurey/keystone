@@ -1,5 +1,18 @@
 # @keystonejs/demo-project-meetup
 
+## 5.0.2
+
+### Patch Changes
+
+- [`f3e99022`](https://github.com/keystonejs/keystone/commit/f3e990222f35889163b4976e4465729fd25d416f) [#1955](https://github.com/keystonejs/keystone/pull/1955) Thanks [@gautamsi](https://github.com/gautamsi)! - Upgraded NextJs to v^9.1.0 from v^9.0.0
+- Updated dependencies [[`267dab2f`](https://github.com/keystonejs/keystone/commit/267dab2fee5bbea711c417c13366862e8e0ab3be), [`8188d76c`](https://github.com/keystonejs/keystone/commit/8188d76cb3f5d3e112ef95fd4e1887db9a520d9d), [`af1e9e4d`](https://github.com/keystonejs/keystone/commit/af1e9e4d3b74753b903b20641b51df99184793df), [`733ac847`](https://github.com/keystonejs/keystone/commit/733ac847cab488dc92a30e7b458191d750fd5a3d), [`f3e99022`](https://github.com/keystonejs/keystone/commit/f3e990222f35889163b4976e4465729fd25d416f)]:
+  - @keystonejs/fields@6.0.0
+  - @keystonejs/app-admin-ui@5.3.0
+  - @keystonejs/keystone@5.3.0
+  - @keystonejs/app-next@5.0.1
+  - @keystonejs/auth-password@5.0.1
+  - @keystonejs/fields-wysiwyg-tinymce@5.0.2
+
 ## 5.0.1
 
 ### Patch Changes
